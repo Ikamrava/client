@@ -6,7 +6,7 @@ function EmployeesList() {
     const [employeeList,setEmployeeList] = useState([]) 
 
 function clickHandler(){
-    Axio.get("http://localhost:3001/employees").then((res)=>{
+    Axio.get("https://protected-fortress-49537.herokuapp.com/employees").then((res)=>{
         setEmployeeList(res.data)
         console.log(employeeList)
     })

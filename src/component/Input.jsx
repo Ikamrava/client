@@ -11,7 +11,7 @@ function Input() {
     
     function onClickHandler(){
         try{
-            Axio.post("http://localhost:3001/create",{
+            Axio.post("https://protected-fortress-49537.herokuapp.com/create",{
                 fname,lname,age,country,position,wage
             }).then((res) => {
                 console.log("first")
